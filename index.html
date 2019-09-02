@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="FREIDEL MORALES" content="">
 
   <title>Codigo Enigma---DESARROLLANDO PARA EL FUTURO...</title>
 
@@ -79,18 +79,18 @@
               <div class="project-text w-100 my-auto text-center text-lg-left">
                 <h4 class="text-white">Encriptar</h4>
                     <div class="input-group">
-                      <input type="text" class="form-control" placeholder="MENSAJE No. 1">                  
+                      <input type="text" class="form-control" placeholder="MENSAJE No. 1" id="mensaje1Encriptar">                  
                     </div>  <br>
                     <div class="input-group">
-                      <input type="text" class="form-control" placeholder="MENSAJE No. 2">                  
+                      <input type="text" class="form-control" placeholder="MENSAJE No. 2" id="mensaje2Encriptar">                  
                     </div><br>
                     <div class="input-group">
-                      <input type="text" class="form-control" placeholder="MENSAJE No. 3">                  
+                      <input type="text" class="form-control" placeholder="MENSAJE No. 3" id="mensaje3Encriptar">                  
                     </div><br>
                     <div class="input-group-append">
-                        <button type="button" class="btn btn-secondary btn-lg btn-block" data-toggle="modal" data-target="#mensajeencriptar">Enviar</button>
+                        <button type="button" class="btn btn-secondary btn-lg btn-block" data-toggle="modal" data-target="#mensajeencriptar" id="btnEncriptar">Enviar</button>
                         <hr class="d-none d-lg-block mb-0 ml-0">
-                        <button type="" class="btn btn-danger btn-lg btn-block">Reset</button>
+                        <button type="Reset" class="btn btn-danger btn-lg btn-block" id="resetEncriptar">Reset</button>
                     </div>
               </div>
 
@@ -110,18 +110,18 @@
               <div class="project-text w-100 my-auto text-center text-lg-right">
                 <h4 class="text-white">Desencriptar</h4>
                 <div class="input-group">
-                      <input type="text" class="form-control" placeholder="MENSAJE No. 1">                  
+                      <input type="text" class="form-control" placeholder="MENSAJE No. 1" id="mensaje1Desencriptar">                  
                     </div>  <br>
                     <div class="input-group">
-                      <input type="text" class="form-control" placeholder="MENSAJE No. 2">                  
+                      <input type="text" class="form-control" placeholder="MENSAJE No. 2" id="mensaje2Desencriptar">                  
                     </div><br>
                     <div class="input-group">
-                      <input type="text" class="form-control" placeholder="MENSAJE No. 3">                  
+                      <input type="text" class="form-control" placeholder="MENSAJE No. 3" id="mensaje3Desencriptar">                  
                     </div><br>
                     <div class="input-group-append">
-                        <button type="button" class="btn btn-secondary btn-lg btn-block" data-toggle="modal" data-target="#mensajedesencriptar">Enviar</button>
+                        <button type="button" class="btn btn-secondary btn-lg btn-block" data-toggle="modal" data-target="#mensajedesencriptar" id="btnDesencriptar">Enviar</button>
                         <hr class="d-none d-lg-block mb-0 ml-0">
-                        <button type="" class="btn btn-danger btn-lg btn-block">Reset</button>
+                        <button type="Reset" class="btn btn-danger btn-lg btn-block" id="resetDesencriptar">Reset</button>
                     </div>
               </div>
             </div>
@@ -161,15 +161,17 @@
 
 
 <!-- The modal encriptar-->
-<div class="modal fade" id="mensajeencriptar" role="dialog">
-    <div class="modal-dialog">    
+<div class="modal fade" id="mensajeencriptar" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-lg">    
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title">MENSAJE ENCRIPTADO</h4>
         </div>
         <div class="modal-body">
-          <p>AQUI VA EL MESANJE.</p>
+          <p id="mensajeYaEncriptado1">AQUI VA EL MESANJE.</p>
+          <p id="mensajeYaEncriptado2"></p>
+          <p id="mensajeYaEncriptado3"></p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
@@ -179,8 +181,8 @@
 </div>
 
 <!-- The modal desencriptar-->
-<div class="modal fade" id="mensajedesencriptar" role="dialog">
-    <div class="modal-dialog">    
+<div class="modal fade" id="mensajedesencriptar" role="dialog"  tabindex="-1">
+    <div class="modal-dialog modal-lg">    
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
@@ -195,6 +197,10 @@
       </div>      
     </div>
 </div>
+  
+
+
+
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -204,6 +210,7 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/grayscale.min.js"></script>
+  <script src="js/freidel.js"></script>
 
 </body>
 
